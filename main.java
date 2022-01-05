@@ -9,8 +9,10 @@ public class main {
         // false_position_method false_position = new false_position_method();
         // false_position.false_position_func(a, b);
 
-        newton_raphson_method newton = new newton_raphson_method();
-        newton.newton_raphson(-20);
+        // newton_raphson_method newton = new newton_raphson_method();
+        // newton.newton_raphson(-20);
 
+        secant_method secant = new secant_method();
+        secant.secant(0.00, 1.00);
     }
 }
