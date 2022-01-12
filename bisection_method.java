@@ -1,6 +1,6 @@
 public class bisection_method{
 
-    static final float EPS = (float)0.000001;
+    static final float EPS = (float)0.00001;
     
     static equation eq = new equation();
 
@@ -12,7 +12,7 @@ public class bisection_method{
             return;
         }
         double c = a;
-        while((b-a)>=EPS)
+        while(Math.abs(b-a)>=EPS)
         {
             c = (a+b)/2;
             if(eq.func(c)==0)
@@ -27,7 +27,7 @@ public class bisection_method{
                 a = c;
             }
         }
-        System.out.printf("The value of root is: %.6f",c);
+        System.out.printf("root(Using Bisection Method): %.3f\n\n",c);
     }
     
     // public static void main(String[] args) {

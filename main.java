@@ -1,18 +1,25 @@
 public class main {
     public static void main(String[] args) {
 
-        // bisection_method bisection = new bisection_method();
         double a = 2;
         double b = 3;
-        // bisection.bisection(a, b);
 
-        // false_position_method false_position = new false_position_method();
-        // false_position.false_position_func(a, b);
+        a = Math.random()*10;
+        b = Math.random()*10;
+        System.out.printf("a : %.6f\n",a);
+        System.out.printf("b : %.6f\n\n",b);
 
-        // newton_raphson_method newton = new newton_raphson_method();
-        // newton.newton_raphson(-20);
+        bisection_method bisection = new bisection_method();
+        bisection.bisection(a, b);
+
+        false_position_method false_position = new false_position_method();
+        false_position.false_position_func(a, b);
+
+        newton_raphson_method newton = new newton_raphson_method();
+        newton.newton_raphson(a);
 
         secant_method secant = new secant_method();
-        secant.secant(0.00, 1.00);
+        secant.secant(a,b);
     }
 }
+

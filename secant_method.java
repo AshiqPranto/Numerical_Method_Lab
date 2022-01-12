@@ -1,6 +1,7 @@
 public class secant_method {
     
     static int itr = 10;
+    static double eps = 0.001;
 
     static double f(double x)
     {
@@ -11,14 +12,15 @@ public class secant_method {
     static void secant(double x0,double x1)
     {
         double root = x0 - ((f(x1)*(x0-x1))/(f(x0)-f(x1)));
-        double next = 0.0;
+        double next = root; //- ((f(root)*(x1-root))/(f(x1)-f(root)));
         // System.out.printf("root = %.3f",f(x1));
-        for(int i = 0;i<itr;i++)
+        // for(int i = 0;i<itr;i++)
+        while(Math.abs(next-x1)>eps)
         {
             next = root - ((f(root)*(x1-root))/(f(x1)-f(root)));
             x1 = root;
             root = next;
         }
-        System.out.printf("root = %,3f",next);
+        System.out.printf("root(Using Secant Method) = %.3f",next);
     }
 }
