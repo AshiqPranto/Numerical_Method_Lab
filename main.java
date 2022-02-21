@@ -1,25 +1,33 @@
 public class main {
     public static void main(String[] args) {
 
-        double a = 2;
-        double b = 3;
+        // double a = 2;
+        // double b = 3;
 
-        a = Math.random()*10;
-        b = Math.random()*10;
-        System.out.printf("a : %.6f\n",a);
-        System.out.printf("b : %.6f\n\n",b);
+        // a = Math.random()*10;
+        // b = Math.random()*10;
+        // System.out.printf("a : %.6f\n",a);
+        // System.out.printf("b : %.6f\n\n",b);
 
-        bisection_method bisection = new bisection_method();
-        bisection.bisection(a, b);
+        // bisection_method bisection = new bisection_method();
+        // bisection.bisection(a, b);
 
-        false_position_method false_position = new false_position_method();
-        false_position.false_position_func(a, b);
+        // false_position_method false_position = new false_position_method();
+        // false_position.false_position_func(a, b);
 
-        newton_raphson_method newton = new newton_raphson_method();
-        newton.newton_raphson(a);
+        // newton_raphson_method newton = new newton_raphson_method();
+        // newton.newton_raphson(a);
 
-        secant_method secant = new secant_method();
-        secant.secant(a,b);
+        // secant_method secant = new secant_method();
+        // secant.secant(a,b);
+
+        // least_square_method least = new least_square_method();
+        // least.least_square();
+
+        gauss_elimination_method gauss_elimination = new gauss_elimination_method();
+        gauss_elimination.gauss_elimination();
+        
+
     }
 }
 
