@@ -33,9 +33,11 @@ public class main {
         // newtons_forward_interpolation forward = new newtons_forward_interpolation();
         // forward.forward_interpolation();
 
-        newtons_divided_differences_interpolation divided_difference = new newtons_divided_differences_interpolation();
-        divided_difference.divided_differences();
+        // newtons_divided_differences_interpolation divided_difference = new newtons_divided_differences_interpolation();
+        // divided_difference.divided_differences();
 
+        lagranges_interpolation lagrange = new lagranges_interpolation();
+        lagrange.lagrange();
     }
 }
 
