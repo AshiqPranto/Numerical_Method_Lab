@@ -49,7 +49,6 @@ public class gauss_elimination_method {
         for(int i = 1;i<=n;i++)
         {
             System.out.printf("x[%d] = %f\n",i,x[i]);
-
         }
 
     }

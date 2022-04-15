@@ -24,9 +24,17 @@ public class main {
         // least_square_method least = new least_square_method();
         // least.least_square();
 
-        gauss_elimination_method gauss_elimination = new gauss_elimination_method();
-        gauss_elimination.gauss_elimination();
+        // gauss_elimination_method gauss_elimination = new gauss_elimination_method();
+        // gauss_elimination.gauss_elimination();
         
+        // polynomial_least_square_method polynomial = new polynomial_least_square_method();
+        // polynomial.polynomial_least_square();
+
+        // newtons_forward_interpolation forward = new newtons_forward_interpolation();
+        // forward.forward_interpolation();
+
+        newtons_divided_differences_interpolation divided_difference = new newtons_divided_differences_interpolation();
+        divided_difference.divided_differences();
 
     }
 }
