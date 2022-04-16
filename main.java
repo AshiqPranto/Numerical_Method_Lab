@@ -36,8 +36,14 @@ public class main {
         // newtons_divided_differences_interpolation divided_difference = new newtons_divided_differences_interpolation();
         // divided_difference.divided_differences();
 
-        lagranges_interpolation lagrange = new lagranges_interpolation();
-        lagrange.lagrange();
+        // lagranges_interpolation lagrange = new lagranges_interpolation();
+        // lagrange.lagrange();
+
+        // trapezoidal_rule trapezoidal = new trapezoidal_rule();
+        // trapezoidal.trapezoidal_rule();
+
+        simpsons_13_rd_rule simpsons = new simpsons_13_rd_rule();
+        simpsons.simpsons();
     }
 }
 
