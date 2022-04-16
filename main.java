@@ -1,8 +1,8 @@
 public class main {
     public static void main(String[] args) {
 
-        // double a = 2;
-        // double b = 3;
+        double a = 2;
+        double b = 3;
 
         // a = Math.random()*10;
         // b = Math.random()*10;
@@ -18,8 +18,8 @@ public class main {
         // newton_raphson_method newton = new newton_raphson_method();
         // newton.newton_raphson(a);
 
-        // secant_method secant = new secant_method();
-        // secant.secant(a,b);
+        secant_method secant = new secant_method();
+        secant.secant(a,b);
 
         // least_square_method least = new least_square_method();
         // least.least_square();
@@ -42,8 +42,8 @@ public class main {
         // trapezoidal_rule trapezoidal = new trapezoidal_rule();
         // trapezoidal.trapezoidal_rule();
 
-        simpsons_13_rd_rule simpsons = new simpsons_13_rd_rule();
-        simpsons.simpsons();
+        // simpsons_13_rd_rule simpsons = new simpsons_13_rd_rule();
+        // simpsons.simpsons();
     }
 }
 
