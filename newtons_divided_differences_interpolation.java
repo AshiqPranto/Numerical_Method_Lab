@@ -17,7 +17,6 @@ public class newtons_divided_differences_interpolation {
             y[i][0] = sc.nextDouble();
         }
         // Calculating devided difference table
-
         for(int j = 1;j<n;j++)
         {
             for(int i = 0;i<n-j;i++)

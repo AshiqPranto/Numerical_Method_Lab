@@ -37,34 +37,37 @@ public class polynomial_least_square_method {
         double a[][] = { { n, sumx, sumx2, sumy },
                 { sumx, sumx2, sumx3, sumxy },
                 { sumx2, sumx3, sumx4, sumx2y } };
-
-        // making uppertriangular matrix
-        for (int j = 0; j < n; j++) {
-            for (int i = 0; i < n; i++) {
-                if (i > j) {
-                    double c = a[i][j]/a[j][j];
-                    for(int k = 0;k<=n;k++)
+        n = degree;
+        //making uppertriangular matrix
+        for(int j = 0;j<=n;j++)
+        {
+            for(int i = 0;i<=n;i++)
+            {
+                if(i>j)
+                {
+                    double c = a[j][i]/a[j][j];
+                    for(int k = 0;k<=n+1;k++)
                     {
-                        a[i][k] = a[i][k] - c*a[j][k];
+                        a[i][k] = a[i][k]-c*a[j][k];
                     }
                 }
             }
         }
-        //backward substituition
-        double ans[] = new double[n+5];
-        ans[n-1] = a[n-1][n]/a[n-1][n-1];
-        for(int i = n-2;i>=0;i--)
+        //backward substiturion
+        double ans[] = new double[n+1];
+        ans[n] = a[n][n+1]/a[n][n];
+        for(int i = n-1;i>=0;i--)
         {
-            double sum = 0;
-            for(int j = n-1;j>i;j--)
+            double sum = 0.0;
+            for(int j = n;j>i;j--)
             {
                 sum+=a[i][j]*ans[j];
             }
-            ans[i] = (a[i][n]-sum)/a[i][i];
+            ans[i] = (a[i][n+1] - sum)/a[i][i];
         }
 
         System.out.println("The solution is: ");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <=n; i++) {
             System.out.printf("x[%d] = %f\n", i, ans[i]);
         }
 

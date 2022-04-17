@@ -19,7 +19,6 @@ public class false_position_method {
         for(int i = 0;i<itr;i++)
         {
             c = (a * eq.func(b) - b * eq.func(a))/(eq.func(b) - eq.func(a));
-
             if(eq.func(c)==0) break;
             else if((eq.func(a)*eq.func(c))<0)
             {

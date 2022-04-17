@@ -11,7 +11,7 @@ public class newtons_forward_interpolation {
         n = sc.nextInt();
         System.out.printf("Enter %d numbers\n",n);
         double x[] = new double[n];
-        double y[][] = new double[n][n];
+        double y[][] = new double[n][n];    
         for(int i = 0;i<n;i++)
         {
             x[i] = sc.nextDouble();
